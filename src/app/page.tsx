@@ -27,14 +27,22 @@ export default function Home() {
             <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">AI & Technology</span>
           </h1>
 
+          {/* Problem/Solution Hook */}
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
+            Struggling with manual processes eating up your team's time?
+          </p>
+          <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl mx-auto">
+            We help SMBs <span className="text-cyan-400 font-semibold">increase productivity by 35%</span> through strategic AI implementation and process automation.
+          </p>
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
             <Link
-              href="mailto:nick@nroconsulting.com?subject=Consulting Inquiry&body=Hi Nick,%0A%0AI'm interested in learning more about your consulting services.%0A%0A"
+              href="mailto:nick@nroconsulting.com?subject=Free Consultation Request&body=Hi Nick,%0A%0AI'm interested in a free 15-minute consultation to discuss how AI and automation could help my business.%0A%0A"
               className="inline-flex items-center px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-medium rounded-lg transition-colors duration-200"
             >
               <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
+              Free 15-Min Consultation
             </Link>
             <Link
               href="#services"
@@ -46,6 +54,59 @@ export default function Home() {
         </motion.div>
       </LampContainer>
       
+      {/* Trust Signals Section */}
+      <section className="py-16 bg-background border-b border-border/20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+              Why Choose NRO Consulting?
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Proven expertise in transforming SMB operations through strategic technology implementation
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-primary">5+</span>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Years Experience</h3>
+              <p className="text-muted-foreground">
+                Deep expertise in AI strategy, automation, and digital transformation for SMBs
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-primary">✓</span>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">No Upfront Costs</h3>
+              <p className="text-muted-foreground">
+                Risk-free consultation and strategic planning. Pay only when you see results
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-primary">90</span>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Day Results</h3>
+              <p className="text-muted-foreground">
+                Rapid implementation with measurable productivity gains within 3 months
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center px-6 py-3 bg-accent/50 border border-border rounded-lg">
+              <span className="text-sm text-foreground">
+                <span className="font-semibold text-primary">Guarantee:</span> If you don't see measurable improvements within 90 days, we'll refund your investment
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section id="services" className="py-24 bg-background">
