@@ -1,0 +1,8 @@
+Contact: mailto:nick@nroconsulting.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://nroconsulting.com/.well-known/security.txt
+Policy: https://nroconsulting.com/security-policy
+
+# Please report security vulnerabilities responsibly
+# Include steps to reproduce and expected vs actual behavior 
